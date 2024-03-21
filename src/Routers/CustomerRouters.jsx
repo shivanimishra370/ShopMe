@@ -1,35 +1,31 @@
 import React from 'react'
 import { Route, Routes } from 'react-router-dom'
-import HomePage from '../Customers/Pages/Homepage/Homepage'
 import Cart from '../Customers/Components/Cart/Cart'
-import Footer from '../Customers/Components/Footer/Footer'
+import Footer  from '../Customers/Components/Footer/Footer'
 import Product from '../Customers/Components/Product/Product'
 import ProductDetails from '../Customers/Components/ProductDetails/ProductDetails'
-import Checkout from '../Customers/Components/Cart/Checkout/Checkout'
+import Checkout from '../Customers/Components/Checkout/Checkout'
 import Order from '../Customers/Components/Order/Order'
 import OrderDEtails from '../Customers/Components/Order/OrderDEtails'
+import Navigation from '../Customers/Components/Navigation'
+import Homepage from '../Customers/Pages/Homepage/Homepage'
+
 const CustomerRouters = () => {
   return (
     <div>
-      <div>
-
-      </div>
+      <Navigation />
       <Routes>
-        <Route path='/' element={<HomePage/>}></Route>
-        <Route path='/cart' element={<Cart/>}></Route>
-        <Route path='/:lavelOne/:laveltwo/:lavelThree' element={<Product/>}></Route>
-        <Route path='/product/:productId' element={<ProductDetails/>}></Route>
-        <Route path='/Checkout' element={<Checkout/>}></Route>
-        <Route path='/account/order' element={<Order/>}></Route>
-        <Route path='/account/order/:orderId' element={<OrderDEtails/>}></Route>
-
-
+      <Route path="/" element={<Homepage />} /> 
+             <Route path="/cart" element={<Cart />} />
+        <Route path="/:lavelOne/:lavelTwo/:lavelThree" element={<Product />} />
+        <Route path="/product/:productId" element={<ProductDetails />} />
+        <Route path="/checkout" element={<Checkout />} />
+        <Route path="/account/order" element={<Order />} />
+        <Route path="/account/order/:orderId" element={<OrderDEtails />} />
       </Routes>
-      <div>
-        <Footer/>
-      </div>
+      <Footer />
     </div>
-  )
-}
+  );
+};
 
-export default CustomerRouters
+export default CustomerRouters;

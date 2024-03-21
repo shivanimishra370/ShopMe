@@ -1,6 +1,6 @@
 import React from 'react'
-import AddressCart from '../../AddressCart/AddressCart'
-
+// import AddressCart from '../../AddressCart/AddressCart'
+import AddressCart from '../AddressCart/AddressCart'
 const OrderSummary = () => {
   return (
     <div>

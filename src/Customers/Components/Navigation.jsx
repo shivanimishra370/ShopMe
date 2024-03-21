@@ -331,7 +331,7 @@ const navigate=useNavigate();
                     className="text-white"
                     onClick={handleUserClick}
                     aria-controls={open ? "basic-menu" : undefined}
-                    aria-haspopups="true"
+                    aria-haspopup="true"
                     aria-expanded={open ? "true" : undefined}
                     sx={{
                       bgcolor: deepPurple[500],

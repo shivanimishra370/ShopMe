@@ -1,11 +1,9 @@
 
 import { useState } from 'react'
-import { StarIcon } from '@heroicons/react/20/solid'
 import { RadioGroup } from '@headlessui/react'
 import {Box, Grid, LinearProgress, Rating } from '@mui/material'
 import { Button } from '@mui/material'
 import ProductReviewCard from './ProductReviewCard'
-import Homesectioncarosal from '../Homesectioncarosal/Homesectioncarosal'
 import { Menskurta } from '../../../Data/Menskurta'
 import Homesectioncart from '../HomeCarol/Homesectioncart/Homesectioncart'
 import { useNavigate } from 'react-router-dom'

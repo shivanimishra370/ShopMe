@@ -44,17 +44,17 @@ const Footer = () => {
             &copy; 2023 Shoppeum. All rights reserved.
           </Typography>
           <Typography variant="body2" component="p" align="center">
-           Made with love by Shoppeum.
+           Made with love by Shop Me.
           </Typography>
           <Typography variant="body2" component="p" align="center">
           Icons made by{' '}
           
           <Link href="https://www.freepik.com" color="inherit" underline="always">
-            Shoppeum
+            Shop Me
           </Link>{' '}
           from{' '}
           <Link href="https://www.freepik.com" color="inherit" underline="always">
-            www.shoppeum.com
+            www.shopme.com
           </Link>
           </Typography>
         </Grid>
