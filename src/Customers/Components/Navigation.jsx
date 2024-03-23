@@ -204,7 +204,7 @@ const navigate=useNavigate();
               {/* Logo */}
               <div className="ml-4 flex lg:ml-0">
 
-                  <span className="sr-only">Shoppeum</span>
+                  <span className="sr-only">ShopMe</span>
                   <img
                     className="h-8 w-auto"
                     src="https://tailwindui.com/img/logos/mark.svg?color=indigo&shade=600"
@@ -352,9 +352,9 @@ const navigate=useNavigate();
    }}
  >
  
-     <MenuItem onClick={handleCloseUserMenu}>Profile</MenuItem>
+     <MenuItem onClick={()=>navigate("myorder")}>Profile</MenuItem>
      <MenuItem onClick={()=>navigate("/account/order")}>My Orders</MenuItem>
-     <MenuItem>Logout</MenuItem>
+     <MenuItem onClick={()=>navigate("/signin")}>Logout</MenuItem>
  
  </Menu>
  </div>

@@ -2,7 +2,7 @@ import React from 'react';
 import MainCarosal from '../../Components/HomeCarol/MainCarosal';
 import Homesectioncarosal from '../../Components/Homesectioncarosal/Homesectioncarosal';
 import { Menskurta } from '../../../Data/Menskurta';
-import OrderDEtails from '../../Components/Order/OrderDEtails'; // Adjusted import statement
+// import OrderDEtails from '../../Components/Order/OrderDEtails'; // Adjusted import statement
 
 const Homepage = () => {
   return (
@@ -14,7 +14,7 @@ const Homepage = () => {
         <Homesectioncarosal data={Menskurta} sectionName={"Men's Shoes"}/>
         <Homesectioncarosal data={Menskurta} sectionName={"Men's Shirt"}/>
         <Homesectioncarosal data={Menskurta} sectionName={"Men's Kurta"}/>
-        <OrderDEtails/>
+        {/* <OrderDEtails/> */}
       </div>
     </div>
   );
